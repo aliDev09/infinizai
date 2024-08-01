@@ -1,0 +1,650 @@
+@import url(./font.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Orbitron";
+  background: #000000;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background: rgba(0, 0, 0, 0.8784313725);
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 15px;
+}
+@media (max-width: 900px) {
+  .header__nav {
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+.header__nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 0 15px;
+}
+@media (max-width: 900px) {
+  .header__nav-list {
+    flex-direction: column;
+  }
+}
+.header__nav-list-link {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  transition: 0.2s linear;
+}
+.header__nav-list-link:hover {
+  color: #FAC422;
+  transition: 0.2s linear;
+}
+.header__nav-btn {
+  width: 178px;
+  height: 62px;
+  color: #FFFFFF;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #FFFFFF;
+}
+.header__blocks {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-auto-rows: minmax(max-content, 600px);
+  justify-content: center;
+  align-items: center;
+  margin-top: 209px;
+  margin-bottom: 250px;
+  padding: 0 15px;
+}
+@media (max-width: 1040px) {
+  .header__blocks {
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.header__blocks-block-block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.header__blocks-block-block-title {
+  color: #57B8FF;
+  font-size: 16px;
+  font-weight: 400;
+}
+.header__blocks-block-title {
+  color: #FFFFFF;
+  font-size: 60px;
+  font-weight: 400;
+  margin-top: 14px;
+  margin-bottom: 45px;
+}
+@media (max-width: 370px) {
+  .header__blocks-block-title {
+    font-size: 50px;
+  }
+}
+.header__blocks-block-text {
+  color: #999999;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 53px;
+}
+.header__blocks-block-btn {
+  width: 203px;
+  height: 70px;
+  color: #FFFFFF;
+  background: transparent;
+  padding: 0 34px;
+  transition: 0.2s linear;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Orbitron";
+  border: none;
+  cursor: pointer;
+}
+.header__blocks-block-btn:hover {
+  background: #57B8FF;
+  transition: 0.2s linear;
+}
+.header__blocks-img {
+  width: 300px;
+  margin-top: 40px;
+}
+@media (max-width: 900px) {
+  .header__blocks-img {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 470px) {
+  .header__blocks-img {
+    width: 300px !important;
+  }
+}
+@media (max-width: 660px) {
+  .header__blocks-img-img {
+    width: 100%;
+    width: 300px;
+    text-align: center;
+  }
+}
+.header__blocks-img:nth-of-type(2) {
+  width: 100%;
+  text-align: end;
+}
+
+.main__content {
+  background: #FDD04A;
+  margin-top: 250px;
+  padding: 130px 0;
+  text-align: center;
+}
+.main__content-block-title {
+  color: #222730;
+  font-size: 48px;
+  font-weight: 400;
+}
+.main__content-block-text {
+  color: #555555;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 42px 0;
+}
+.main__fortnite {
+  height: 1072px;
+  background-image: url(../img/fortnite.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 130px 0;
+}
+@media (max-width: 1210px) {
+  .main__fortnite {
+    height: 1472px;
+    padding: 130px 15px;
+  }
+}
+@media (max-width: 715px) {
+  .main__fortnite {
+    height: 1600px;
+  }
+}
+@media (max-width: 500px) {
+  .main__fortnite {
+    height: 1600px;
+  }
+}
+@media (max-width: 490px) {
+  .main__fortnite {
+    height: 1950px;
+  }
+}
+@media (max-width: 380px) {
+  .main__fortnite {
+    height: 2200px;
+  }
+}
+.main__fortnite-blocks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main__fortnite-blocks-title {
+  color: #FFFFFF;
+  width: 716px;
+  font-size: 64px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 11px;
+  margin-bottom: 39px;
+}
+@media (max-width: 715px) {
+  .main__fortnite-blocks-title {
+    width: 500px;
+  }
+}
+@media (max-width: 500px) {
+  .main__fortnite-blocks-title {
+    width: 320px;
+    font-size: 40px;
+  }
+}
+.main__fortnite-blocks-text {
+  color: rgba(223, 223, 223, 0.8);
+  width: 698px;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 61px;
+}
+@media (max-width: 715px) {
+  .main__fortnite-blocks-text {
+    width: 500px;
+  }
+}
+@media (max-width: 500px) {
+  .main__fortnite-blocks-text {
+    width: 320px;
+  }
+}
+.main__fortnite-blocks-blocks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+@media (max-width: 1210px) {
+  .main__fortnite-blocks-blocks {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.main__fortnite-blocks-blocks-block {
+  height: 212px;
+  background: rgba(255, 255, 255, 0.1490196078);
+  border-radius: 20px;
+}
+.main__fortnite-blocks-blocks-block-text {
+  color: rgba(223, 223, 223, 0.8);
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 80px;
+}
+@media (max-width: 490px) {
+  .main__fortnite-blocks-blocks-block {
+    height: 320px;
+  }
+}
+@media (max-width: 380px) {
+  .main__fortnite-blocks-blocks-block {
+    height: 380px;
+  }
+}
+.main__fortnite-blocks-blocks-block-block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  margin-top: 35px;
+  margin-left: 35px;
+  margin-bottom: 19px;
+}
+.main__fortnite-blocks-blocks-block-block-title {
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: 400;
+  margin-left: 16px;
+}
+.main__cloud {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(max-content, 600px);
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 0 15px;
+}
+@media (max-width: 1064px) {
+  .main__cloud {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    padding: 0 30px;
+  }
+}
+.main__cloud-title {
+  color: #FFFFFF;
+  font-size: 64px;
+  font-weight: 400;
+  margin-top: 11px;
+  margin-bottom: 38px;
+}
+.main__cloud-text {
+  color: rgba(223, 223, 223, 0.8);
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 38px;
+  margin-bottom: 54px;
+}
+.main__cloud-img {
+  margin-left: 100px;
+}
+@media (max-width: 700px) {
+  .main__cloud-img {
+    margin-left: 50px;
+  }
+}
+@media (max-width: 580px) {
+  .main__cloud-img {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 500px) {
+  .main__cloud-img {
+    width: 400px;
+  }
+}
+@media (max-width: 500px) {
+  .main__cloud-img {
+    width: 400px;
+  }
+}
+@media (max-width: 400px) {
+  .main__cloud-img {
+    width: 320px;
+  }
+}
+.main__customize {
+  background: #2A313C;
+}
+.main__customize-blocks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 100px;
+}
+@media (max-width: 1170px) {
+  .main__customize-blocks {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .main__customize-blocks-img {
+    width: 320px;
+  }
+}
+.main__customize-blocks-block-title {
+  color: #FFFFFF;
+  font-size: 50px;
+  font-weight: 400;
+  margin-top: 11px;
+  margin-bottom: 38px;
+}
+.main__customize-blocks-block-text {
+  color: rgba(223, 223, 223, 0.8);
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 54px;
+}
+.main__customize-blocks-block-img {
+  width: 154px;
+}
+.main__customize-blocks-block img:nth-of-type(2) {
+  width: 154px;
+  margin-left: 10px;
+}
+.main__customize-blocks-block img:nth-of-type(3) {
+  width: 154px;
+  margin-left: 10px;
+}
+.main__game {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(width 400px);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .main__game {
+    grid-auto-rows: minmax(width 300px);
+  }
+}
+@media (max-width: 800px) {
+  .main__game {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(width 800px);
+  }
+}
+.main__game-block {
+  height: 532px;
+  padding-top: 222px;
+  background-image: url(../img/FPS__smoth.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main__game-block-title {
+  color: #FFFFFF;
+  font-size: 48px;
+  font-weight: 400;
+}
+.main__game-block i {
+  color: #FFFFFF;
+  font-size: 90px;
+}
+.main__game-block1 {
+  height: 532px;
+  padding-top: 222px;
+  background-image: url(../img/multiplayer.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main__game-block1-title {
+  color: #FFFFFF;
+  font-size: 48px;
+  font-weight: 400;
+}
+.main__game-block1 i {
+  color: #FFFFFF;
+  font-size: 90px;
+}
+.main__game-block2 {
+  height: 532px;
+  padding-top: 222px;
+  background-image: url(../img/open_world.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main__game-block2-title {
+  color: #FFFFFF;
+  font-size: 48px;
+  font-weight: 400;
+}
+.main__game-block2 i {
+  color: #FFFFFF;
+  font-size: 90px;
+}
+.main__news {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+.main__news-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 650px) {
+  .main__news-block {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.main__news-block-title {
+  color: #FFFFFF;
+  font-size: 64px;
+  font-weight: 400;
+}
+.main__news-blocks {
+  display: flex;
+  margin-top: 67px;
+}
+@media (max-width: 1200px) {
+  .main__news-blocks {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
+.main__news-blocks-block {
+  text-align: center;
+}
+.main__news-blocks-block-date {
+  color: #57B8FF;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 54px;
+  margin-bottom: 28px;
+}
+.main__news-blocks-block-text {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 400;
+}
+@media (max-width: 650px) {
+  .main__news-blocks-block img {
+    width: 300px;
+  }
+}
+.main__news-blocks-blocks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(max-content, 312px);
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+@media (max-width: 1200px) {
+  .main__news-blocks-blocks {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 100px;
+  }
+}
+.main__news-blocks-blocks-block {
+  margin-left: 5px;
+  margin-top: 15px;
+}
+.main__news-blocks-blocks-block-text {
+  color: #FFFFFF;
+  font-size: 23px;
+  font-weight: 400;
+}
+.main__join {
+  height: 683px;
+  background-image: url(../img/main__bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 130px 0;
+}
+@media (max-width: 610px) {
+  .main__join {
+    height: 783px;
+  }
+}
+@media (max-width: 508px) {
+  .main__join {
+    height: 883px;
+  }
+}
+.main__join-block {
+  text-align: center;
+}
+.main__join-block-title {
+  color: #141820;
+  font-size: 72px;
+  font-weight: 400;
+}
+@media (max-width: 440px) {
+  .main__join-block-title {
+    font-size: 60px;
+  }
+}
+@media (max-width: 360px) {
+  .main__join-block-title {
+    font-size: 40px;
+  }
+}
+.main__join-block-text {
+  color: #141820;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 40px 0;
+}
+@media (max-width: 700px) {
+  .main__join-block-block {
+    flex-direction: column;
+  }
+}
+.main__join-block-block-input {
+  width: 300px;
+  height: 100px;
+  border: 1px solid #CCCCCC;
+}
+
+.footer {
+  background: #222730;
+}
+.footer__nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(width 400px);
+  justify-content: center;
+  padding-top: 130px;
+  padding-left: 15px;
+  padding-right: 15px;
+  gap: 100px;
+}
+@media (max-width: 650px) {
+  .footer__nav {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.footer__nav-block-text {
+  color: #999999;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 35px;
+  margin-bottom: 65px;
+}
+.footer__nav-block-title {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 400;
+}
+.footer__nav-block-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 23px;
+  gap: 12px;
+}
+.footer__nav-block-list-link {
+  color: #999999;
+  font-size: 15px;
+  font-weight: 400;
+}/*# sourceMappingURL=style.css.map */
